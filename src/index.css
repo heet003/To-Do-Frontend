@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu Sans", sans-serif;
+}
+
+:root {
+  --primary-bg-color: #A1D6B2;
+  --secondary-accent: #CEDF9F;
+  --button-highlight: #E8B86D;
+  --neutral-bg: #F1F3C2;
+}

@@ -1,0 +1,52 @@
+.image-upload__preview {
+  width: 20%;
+  border-radius: 5%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.image-upload__preview img {
+  width: 100%;
+  border-radius: 7%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-upload Button {
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.438);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 900px) {
+  .image-upload__preview {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .image-upload__preview {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .image-upload__preview {
+    width: 80%;
+    height: 80%;
+  }
+
+  .image-upload Button {
+    padding: 5%;
+  }
+}

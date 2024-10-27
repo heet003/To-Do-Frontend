@@ -1,0 +1,127 @@
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 22vh;
+  left: 10%;
+  width: 80%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 8px;
+}
+
+.modal__header {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  background: #2a006e;
+  color: white;
+}
+
+.modal__header h2 {
+  margin: 0.5rem;
+}
+
+.modal__content {
+  padding: 1rem 0.5rem;
+}
+
+.modal__footer {
+  padding: 1rem 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+
+.modal-enter {
+  transform: translateY(-10rem);
+  opacity: 0;
+}
+
+.modal-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.modal-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-exit-active {
+  transform: translateY(-10rem);
+  opacity: 0;
+  transition: all 200ms;
+}
+
+
+.modal-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Space between options */
+}
+
+.modal-option {
+  display: flex;
+  align-items: center;
+  /* Aligns items vertically */
+  justify-content: space-between;
+  /* Spaces items evenly */
+}
+
+.modal-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-button.update {
+  background-color: #4caf50;
+  /* Green for Update */
+  color: white;
+}
+
+.modal-button.update:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+.modal-button.complete {
+  background-color: #f44336;
+  /* Red for Delete */
+  color: white;
+}
+
+.modal-button.complete:hover {
+  background-color: #e53935;
+  /* Darker red on hover */
+}
+
+.modal-close-button {
+  padding: 10px 15px;
+  background-color: #2196f3;
+  /* Blue for Close */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close-button:hover {
+  background-color: #1976d2;
+  /* Darker blue on hover */
+}

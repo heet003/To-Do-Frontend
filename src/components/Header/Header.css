@@ -1,0 +1,121 @@
+.header {
+    background-color: var(--primary-bg-color);
+    padding: 1rem 2rem;
+    color: #4f4f4f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4f4f4f;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+.header__link {
+    font-size: 1rem;
+    color: #4f4f4f;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.header__link:hover {
+    background-color: var(--secondary-accent);
+    color: #4f4f4f;
+}
+
+.header__button-item {
+    margin-left: auto;
+}
+
+.header__button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    color: #4f4f4f;
+}
+
+.header__button--signin {
+    background-color: var(--button-highlight);
+}
+
+.header__button--signin:hover {
+    background-color: var(--neutral-bg);
+}
+
+.header__button--logout {
+    background-color: var(--secondary-accent);
+}
+
+.header__button--logout:hover {
+    background-color: var(--neutral-bg);
+}
+
+.header__menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: transparent; 
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem; 
+}
+
+
+/* Styles for Mobile */
+@media (max-width: 900px) {
+    .header__nav-list {
+        display: none;
+    }
+
+
+    .header__drawer .ant-drawer-content {
+        background-color: #f7f7f7;
+    }
+
+    .header__drawer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 1rem;
+        padding: 1rem;
+        list-style-type: none;
+    }
+
+    .header__drawer .header__button-item {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .header__menu-button {
+        display: none;
+    }
+}

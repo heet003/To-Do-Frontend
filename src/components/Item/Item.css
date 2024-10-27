@@ -1,0 +1,246 @@
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+    min-height: 200px;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item-header {
+    text-align: center;
+    padding: 10px;
+}
+
+.item-header img {
+    width: 50px;
+}
+
+.item-description {
+    padding: 10px;
+    color: #666;
+    text-align: left;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    min-height: 60px;
+}
+
+.item-footer {
+    padding: 10px;
+    text-align: right;
+    margin-top: auto;
+}
+
+
+.High {
+    border-top: 10px solid red;
+}
+
+.Medium {
+    border-top: 10px solid yellow;
+}
+
+.Low {
+    border-top: 10px solid green;
+}
+
+
+/* General Modal Styling */
+.modal-content-enhanced {
+    padding: 20px;
+    max-height: 80vh;
+    overflow: hidden;
+    background-color: #f7f9fc;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollable area for update form */
+.modal-scrollable-content {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Option Sections */
+.modal-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.modal-option-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-section-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Enhanced Buttons */
+.modal-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.modal-button.update {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.modal-button.complete {
+    background-color: #ff5252;
+    color: #fff;
+}
+
+.modal-button:hover {
+    opacity: 0.9;
+}
+
+.modal-footer-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-close-button {
+    padding: 8px 15px;
+    background-color: #757575;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modal-close-button:hover {
+    background-color: #616161;
+}
+
+@media (max-width: 768px) {
+    .list-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .item {
+        min-height: 180px;
+    }
+
+    .item-header {
+        padding: 8px;
+    }
+
+    .item-header img {
+        width: 40px;
+    }
+
+    .item-description {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .item-footer {
+        padding: 8px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .list-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+
+    .item {
+        min-height: 160px;
+    }
+
+    .item-header {
+        padding: 6px;
+    }
+
+    .item-header img {
+        width: 30px;
+    }
+
+    .item-description {
+        padding: 6px;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .item-footer {
+        padding: 6px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content-enhanced {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal-section-header {
+        font-size: 1.1em;
+    }
+
+    .modal-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content-enhanced {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .modal-section-header {
+        font-size: 1em;
+    }
+
+    .modal-button {
+        font-size: 0.85em;
+        padding: 6px 12px;
+    }
+}

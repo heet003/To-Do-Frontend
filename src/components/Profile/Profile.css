@@ -1,0 +1,196 @@
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.user-main-body {
+    width: 100%;
+    max-width: 800px;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.rounded-circle {
+    border-radius: 10%;
+    width: 30%;
+    border: 2px solid var(--primary-bg-color);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styles */
+.mt-3 h4 {
+    font-size: 1.6rem;
+    color: #333333;
+    margin: 0;
+}
+
+.mt-3 p {
+    color: #777777;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Profile Info */
+.profile-card-body h6 {
+    font-size: 1rem;
+    color: var(--primary-bg-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.profile-card-body .text-secondary {
+    color: #555555;
+    font-weight: 400;
+}
+
+.profile-card-body hr {
+    border: 0.5px solid var(--secondary-accent);
+    margin: 10px 0;
+}
+
+.form-group label {
+    display: block;
+    color: #555555;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 0.2rem auto;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-bg-color);
+    outline: none;
+}
+
+.ant-btn-secondary {
+    background-color: var(--button-highlight);
+    border: none;
+}
+
+.ant-btn-secondary:hover {
+    background-color: white;
+}
+
+.ant-btn-primary {
+    background-color: var(--primary-bg-color);
+    border: none;
+}
+
+.ant-btn-primary:hover {
+    background-color: var(--button-highlight);
+}
+
+.ant-btn {
+    color: white;
+    font-weight: bold;
+    border: 1px solid var(--primary-bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ant-btn:hover {
+    background-color: var(--secondary-accent);
+    color: #333333;
+}
+
+.modal-button.update,
+.modal-button.complete {
+    font-weight: bold;
+}
+
+.modal-content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+    .user-main-body {
+        padding: 15px;
+    }
+
+    .profile-card {
+        padding: 18px;
+    }
+
+    .mt-3 h4 {
+        font-size: 1.4rem;
+    }
+
+    .mt-3 p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .user-main-body {
+        padding: 10px;
+    }
+
+    .profile-card {
+        padding: 15px;
+    }
+
+    .rounded-circle {
+        width: 35%;
+    }
+
+    .mt-3 h4 {
+        font-size: 1.5rem;
+    }
+
+    .mt-3 p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .user-main-body {
+        padding: 5px;
+    }
+
+    .profile-card {
+        padding: 10px;
+    }
+
+    .rounded-circle {
+        width: 50%;
+    }
+
+    .mt-3 h4 {
+        font-size: 1.6rem;
+    }
+
+    .mt-3 p {
+        font-size: 1.1rem;
+    }
+
+    .form-group input {
+        padding: 12px;
+    }
+}
